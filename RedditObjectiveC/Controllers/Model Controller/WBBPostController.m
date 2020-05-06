@@ -36,7 +36,7 @@
     searchURL = [searchURL URLByAppendingPathExtension:@"json"];
     
     // 2. Contact server / Start Task
-    [[NSURLSession.sharedSession dataTaskWithRequest:searchURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[NSURLSession.sharedSession dataTaskWithURL:searchURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         // 3. Error Handling
         if (error)
         {
