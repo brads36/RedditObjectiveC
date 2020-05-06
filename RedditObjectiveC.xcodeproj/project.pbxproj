@@ -15,6 +15,8 @@
 		7878243A24631CB900D874CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7878243824631CB900D874CE /* LaunchScreen.storyboard */; };
 		7878243D24631CB900D874CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878243C24631CB900D874CE /* main.m */; };
 		7878244B24631DFC00D874CE /* WBBPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878244A24631DFC00D874CE /* WBBPost.m */; };
+		78893E7C2463341B001728A5 /* SearchPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78893E7B2463341A001728A5 /* SearchPostsTableViewController.swift */; };
+		78893E7E24633733001728A5 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78893E7D24633733001728A5 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		7878243C24631CB900D874CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7878244924631DFC00D874CE /* WBBPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBBPost.h; sourceTree = "<group>"; };
 		7878244A24631DFC00D874CE /* WBBPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBBPost.m; sourceTree = "<group>"; };
+		78893E7A2463341A001728A5 /* RedditObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedditObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
+		78893E7B2463341A001728A5 /* SearchPostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPostsTableViewController.swift; sourceTree = "<group>"; };
+		78893E7D24633733001728A5 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 			children = (
 				7878243324631CB800D874CE /* Main.storyboard */,
 				7878243824631CB900D874CE /* LaunchScreen.storyboard */,
+				78893E7D24633733001728A5 /* PostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +122,8 @@
 		7878244724631D3000D874CE /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78893E7B2463341A001728A5 /* SearchPostsTableViewController.swift */,
+				78893E7A2463341A001728A5 /* RedditObjectiveC-Bridging-Header.h */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 				TargetAttributes = {
 					7878242624631CB700D874CE = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -200,9 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78893E7E24633733001728A5 /* PostTableViewCell.swift in Sources */,
 				7878242C24631CB800D874CE /* AppDelegate.m in Sources */,
 				7878244B24631DFC00D874CE /* WBBPost.m in Sources */,
 				7807F7D9246324F2000CC842 /* WBBPostController.m in Sources */,
+				78893E7C2463341B001728A5 /* SearchPostsTableViewController.swift in Sources */,
 				7878243D24631CB900D874CE /* main.m in Sources */,
 				7878242F24631CB800D874CE /* SceneDelegate.m in Sources */,
 			);
@@ -344,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RedditObjectiveC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -352,6 +364,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WBB.RedditObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedditObjectiveC/Controllers/View Controller/RedditObjectiveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -360,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RedditObjectiveC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -368,6 +384,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WBB.RedditObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedditObjectiveC/Controllers/View Controller/RedditObjectiveC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
