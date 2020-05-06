@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7807F7D9246324F2000CC842 /* WBBPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7807F7D8246324F2000CC842 /* WBBPostController.m */; };
 		7878242C24631CB800D874CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878242B24631CB800D874CE /* AppDelegate.m */; };
 		7878242F24631CB800D874CE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878242E24631CB800D874CE /* SceneDelegate.m */; };
 		7878243524631CB800D874CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7878243324631CB800D874CE /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7807F7D7246324F2000CC842 /* WBBPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBBPostController.h; sourceTree = "<group>"; };
+		7807F7D8246324F2000CC842 /* WBBPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBBPostController.m; sourceTree = "<group>"; };
 		7878242724631CB800D874CE /* RedditObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7878242A24631CB800D874CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7878242B24631CB800D874CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 		7878244824631D3A00D874CE /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7807F7D7246324F2000CC842 /* WBBPostController.h */,
+				7807F7D8246324F2000CC842 /* WBBPostController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			files = (
 				7878242C24631CB800D874CE /* AppDelegate.m in Sources */,
 				7878244B24631DFC00D874CE /* WBBPost.m in Sources */,
+				7807F7D9246324F2000CC842 /* WBBPostController.m in Sources */,
 				7878243D24631CB900D874CE /* main.m in Sources */,
 				7878242F24631CB800D874CE /* SceneDelegate.m in Sources */,
 			);
